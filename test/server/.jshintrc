@@ -1,0 +1,15 @@
+{
+	"strict": true,
+	"indent": 1,
+	"node": true,
+	"globals": {
+		"ctx": true,
+		"source": true,
+		"request": true,
+		"expect": true,
+		"describe": true,
+		"before": true,
+		"after": true,
+		"it": true
+	}
+}

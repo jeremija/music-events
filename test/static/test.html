@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>TESTS</title>
+	<link rel="stylesheet" href="../../src/static/bower/mocha/mocha.css">
+
+	<script src="../../src/static/js/require/config.js"></script>
+	<script src="config/require-config.js"></script>
+	<script src="../../src/static/bower/requirejs/require.js"></script>
+
+	<script src="../../src/static/bower/mocha/mocha.js"></script>
+	<script src="../../src/static/bower/expect/index.js"></script>
+
+</head>
+<body>
+    <input type="hidden" id="settings" value='{"logEnabled":true,"urlPrefix":"/"}'>
+
+	<div id="mocha">
+	</div>
+
+	<div id="test">
+	</div>
+
+	<!-- add your tests to tests.js -->
+	<script src="config/tests.js"></script>
+	<script src="config/test-runner.js"></script>
+</body>
+</html>

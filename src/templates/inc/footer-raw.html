@@ -1,0 +1,8 @@
+	{{ if (settings.development) { }}
+		<script src="{{= settings.context}}js/require/config.js"></script>
+		<script data-main="{{= settings.context}}js/app.js" src="{{= settings.context}}bower/requirejs/require.js"></script>
+	{{ } else { }}
+		<script src="{{= settings.context}}js/app.js?build={{= settings.build}}"></script>
+	{{ } }}
+</body>
+</html>

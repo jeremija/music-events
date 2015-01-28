@@ -1,0 +1,23 @@
+.make-flex(@min-width) {
+	@media (min-width: @min-width) {
+		display: flex;
+		min-height: 100%;
+		align-items: center;
+	}
+}
+
+.flex-xs {
+	.make-flex(@screen-xs);
+}
+
+.flex-sm {
+	.make-flex(@screen-sm);
+}
+
+.flex-md {
+	.make-flex(@screen-md);
+}
+
+.flex-lg {
+	.make-flex(@screen-lg);
+}

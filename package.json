@@ -1,0 +1,38 @@
+{
+  "name": "music-events-search",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "",
+  "devDependencies": {
+    "expect.js": "^0.3.1",
+    "ink-docstrap": "^0.4.12",
+    "jsdoc": "^3.3.0-alpha9",
+    "jshint": "~2.5.2",
+    "less": "^1.7.4",
+    "mocha": "^2.0.1",
+    "mocha-phantomjs": "~3.5.0",
+    "nock": "^0.51.0",
+    "phantomjs": "~1.9.7-15",
+    "repl-promised": "^0.1.0",
+    "requirejs": "~2.1.14",
+    "supertest": "^0.15.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.9.2",
+    "cookie-parser": "^1.3.3",
+    "ejs": "~1.0.0",
+    "express": "~4.7.1",
+    "minimist": "^1.1.0",
+    "moment": "^2.8.3",
+    "node-cache": "^1.1.0",
+    "node-uuid": "^1.4.1",
+    "q": "^1.1.1",
+    "request": "^2.48.0",
+    "winston": "^0.8.3"
+  }
+}
