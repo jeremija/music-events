@@ -25,6 +25,21 @@ define(['bind/binder', 'services/events', 'moment', 'core/events'],
         page: 0
     };
 
+    function updateLocation(location) {
+        if (!location) return;
+        location = location.trim();
+        var m = location.match(/^\((\d+\.?\d*), *(\d+\.?\d*)\)$/);
+        if (m && m.length === 3) {
+            delete lastArgs.location;
+            lastArgs.lat = m[2];
+            lastArgs.long = m[1];
+            return;
+        }
+        lastArgs.location = location;
+        delete lastArgs.lat;
+        delete lastArgs.long;
+    }
+
     var exports = {
         id: '/index.html',
         vm: {
@@ -39,7 +54,7 @@ define(['bind/binder', 'services/events', 'moment', 'core/events'],
                         page: 0,
                         limit: 60
                     };
-                    if (self.location()) lastArgs.location = self.location();
+                    updateLocation(self.location());
                     if (self.km()) lastArgs.distance = self.km();
                     if (self.tag()) lastArgs.tag = self.tag();
                     lastArgs.page = 0;
